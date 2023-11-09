@@ -33,6 +33,8 @@
   <p>Attempts: <span id="attempts">0</span></p>
   
   <p>Pervious Guesses: <span id="prev"></span></p>
+
+  <p> <button id="resetButton" onclick="resetButton()">reset</button></p>
   
   
      <script>
@@ -67,9 +69,20 @@
             count++;
             Attempts.innerText = count;
 
+
+            prev.append(num + " ")
             
         }
 
+        function resetButton(){
+            {
+                (onclick==resetButton)
+                feedback.innerText = "";
+                attempts.innerText = "0";
+                prev.innerText ="";
+                location. reload()
+            }
+        }
 
 
      </script>
